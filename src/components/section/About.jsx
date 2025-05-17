@@ -8,13 +8,19 @@ export const About = () => {
     "HTML",
     "CSS",
     "PHP",
-    "Laravel",
     "Laravel-Breeze",
   ];
   const graphicDesigningSkills = [
     "AdobePhotoshop",
     "AdobeIllustrator",
     "Canva",
+  ];
+  const otherSkills = [
+    "Microsoft Word",
+    "Microsoft Excel",
+    "Powerpoint",
+    "Data Analisys",
+    "Data Annotation",
   ];
   return (
     <section
@@ -30,12 +36,12 @@ export const About = () => {
 
           <div className="rounded-xl p-8 border-white/10 ">
             <p className="text-gray-300 mb-6">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
-              possimus officia minus. Reiciendis laborum sit quia architecto
-              atque quod omnis repudiandae assumenda aperiam, repellat odio
-              aliquid officia labore earum! Libero.
+              I'm a passionate Web Developer and Graphic Designer who is curious
+              and eager to learn new things. I'm also very interested in trying
+              a Virtual Assistant role, where I can gain valuable experience
+              from my clients while delivering quality results.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="rounded-xl p-4 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4">Web Development</h3>
                 <div className="flex flex-wrap gap-2">
@@ -53,6 +59,19 @@ export const About = () => {
                 <h3 className="text-xl font-bold mb-4">Graphic Designing</h3>
                 <div className="flex flex-wrap gap-2">
                   {graphicDesigningSkills.map((tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="rounded-xl p-4 hover:-translate-y-1 transition-all">
+                <h3 className="text-xl font-bold mb-4">Other Skills</h3>
+                <div className="flex flex-wrap gap-2">
+                  {otherSkills.map((tech, key) => (
                     <span
                       key={key}
                       className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"

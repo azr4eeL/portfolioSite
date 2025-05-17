@@ -1,23 +1,29 @@
-
 import { RevealOnScroll } from "../RevealOnScroll";
-
 
 export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative"
+      className="min-h-screen flex items-center justify-center relative bg-cover bg-center"
+      style={{
+        backgroundImage:
+          "linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url('/assets/projectCover/navLogo.png')",
+      }}
     >
       <RevealOnScroll>
-        <div className="text-center z-10 px-4">
+        <div className="text-center z-10 px-4 py-10">
           <h1 className="text-5xl md:text-7xl fond-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
-            Hi, I'm azr4eeL
+            Hi, I'm Jerwyn
           </h1>
-          <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic
-            accusamus voluptas facere perspiciatis? Voluptatibus fugit veniam
-            minima fuga nemo nam iusto assumenda, at illo optio, ullam esse.
-            Reprehenderit natus dolorem neque assumenda.
+          <p className="text-gray-400 text-lg mb-8 max-w-5xl mx-auto">
+            I'm a passionate Web Developer and Graphic Designer dedicated to
+            crafting intuitive, responsive, and visually engaging digital
+            experiences. I enjoy solving problems through clean code and
+            creative design. Always eager to take on new challenges, collaborate
+            with others, and continuously improve through training and hands-on
+            projects.I’m also open to taking on Virtual Assistant roles where I
+            can apply my organizational skills and adaptability. I'm always
+            eager to learn, grow, and take on new challenges and trainings.
           </p>
           <div className="flex justify-center space-x-4">
             <a

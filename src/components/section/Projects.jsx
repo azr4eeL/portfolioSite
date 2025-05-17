@@ -43,11 +43,9 @@ export const Projects = () => {
             Feactured Projects
           </h2>
 
-          <div
-            onClick={handleClick}
-            className="relative p-6 border rounded-xl border-white/10 transition-all duration-300 mx-auto cursor-pointer select-none"
-          >
+          <div className="relative p-6 border rounded-xl border-white/10 transition-all duration-300 mx-auto cursor-pointer select-none">
             <img
+              onClick={handleClick}
               title="Click to see next project"
               src={projects[current].image}
               alt={projects[current].title}
@@ -60,9 +58,6 @@ export const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-gray-300"
-              //onClick={(e) => {
-              // e.stopPropagation(); // prevent advancing slide on click of link
-              //}}
             >
               View Project ➟{" "}
             </a>
