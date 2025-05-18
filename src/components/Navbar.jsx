@@ -10,8 +10,12 @@ export const Navbar = ({ menuOPen, setMenuOPen }) => {
         <div className="flex justify-between items-center h-16">
           <a
             href="#home"
-            className="font-mono flex text-xl font-bold text-white"
+            className="font-mono flex grid-rows-2  0text-xl font-bold text-white"
           >
+            <img
+              src="/assets/projectCover/navLogo.svg"
+              className="mx-auto w-[25px] justify-center"
+            />
             Jerwyn <span className="text-blue-500">.</span>
           </a>
           <div
