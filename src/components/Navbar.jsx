@@ -13,7 +13,7 @@ export const Navbar = ({ menuOPen, setMenuOPen }) => {
             className="font-mono flex grid-rows-2  0text-xl font-bold text-white"
           >
             <img
-              src="/assets/projectCover/navLogo.svg"
+              src="/portfolioSite/assets/projectCover/navLogo.svg"
               className="mx-auto w-[25px] justify-center"
             />
             Jerwyn <span className="text-blue-500">.</span>
